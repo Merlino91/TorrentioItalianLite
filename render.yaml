@@ -3,7 +3,7 @@ services:
     name: Torrentio Plus
     runtime: python  
     buildCommand: pip install --no-cache-dir -r requirements.txt  
-    startCommand: ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "9000", "--workers", "1"] 
+    startCommand: uvicorn app:app
     plan: free 
     region: frankfurt
     envVars:
